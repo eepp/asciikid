@@ -2,15 +2,22 @@
 
 _**asciikid**_ is a simple terminal-based ASCII art editor made for kids with two [modes](#modes): _write mode_ for text and _draw mode_ to draw lines.
 
+## Try
+
+```
+$ pipx run asciikid
+```
+
 ## Install
 
-Install from PyPI:
+[Install](https://pipx.pypa.io/stable/docs/#pipx-install)
+from [PyPI](https://pypi.org/project/asciikid/):
 
 ```
 $ pipx install asciikid
 ```
 
-## Launch
+Launch with:
 
 ```
 $ asciikid
