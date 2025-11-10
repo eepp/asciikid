@@ -1,6 +1,6 @@
 [project]
 name = "asciikid"
-version = "0.2.0"
+version = "0.2.1"
 description = "A fun and simple TUI for kids to draw and write text creatively"
 readme = "README.md"
 license = "MIT"

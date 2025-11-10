@@ -260,10 +260,18 @@ class _App:
             self._wrap_cursor_y()
         elif direction == _Direction.LEFT:
             self._cursor_x -= 1
-            self._cursor_y += self._wrap_cursor_x()
+
+            if self._cursor_x < 0:
+                self._cursor_x = self._term.width - 1
+            elif self._cursor_x >= self._term.width:
+                self._cursor_x = 0
         elif direction == _Direction.RIGHT:
             self._cursor_x += 1
-            self._cursor_y += self._wrap_cursor_x()
+
+            if self._cursor_x < 0:
+                self._cursor_x = self._term.width - 1
+            elif self._cursor_x >= self._term.width:
+                self._cursor_x = 0
 
         self._print_at_cursor('')
 
