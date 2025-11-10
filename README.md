@@ -24,22 +24,26 @@ In any mode, change the current colors with:
 
 | Key | Action |
 |-----|--------|
-| **F1** | Default foreground color |
-| **F2** | Red foreground |
-| **F3** | Green foreground |
-| **F4** | Yellow foreground |
-| **F5** | Blue foreground |
-| **F6** | Magenta foreground |
-| **F7** | Cyan foreground |
-| **Ctrl**+**F1** | Default background color |
-| **Ctrl**+**F2** | Red background |
-| **Ctrl**+**F3** | Green background |
-| **Ctrl**+**F4** | Yellow background |
-| **Ctrl**+**F5** | Blue background |
-| **Ctrl**+**F6** | Magenta background |
-| **Ctrl**+**F7** | Cyan background |
+| **F1** | Default color |
+| **F2** | Red |
+| **F3** | Green |
+| **F4** | Yellow |
+| **F5** | Blue |
+| **F6** | Magenta |
+| **F7** | Cyan |
+| **Ctrl**+**F1** | Default alternate color |
+| **Ctrl**+**F2** | Red alternate |
+| **Ctrl**+**F3** | Green alternate |
+| **Ctrl**+**F4** | Yellow alternate |
+| **Ctrl**+**F5** | Blue alternate |
+| **Ctrl**+**F6** | Magenta alternate |
+| **Ctrl**+**F7** | Cyan alternate |
+| **F8** | Toggle alternate color is background vs. foreground color |
 | **F9** | Toggle bold text |
 | **F10** | Toggle bright foreground color |
+| **F11** | Toggle prism mode |
+
+**F8** exists so that you can choose a background color even when your terminal doesn't support **Ctrl**+**Fx**.
 
 The bottom right corner shows a preview of the current colors.
 
@@ -48,6 +52,15 @@ Quit with **Escape**.
 ### Write mode
 
 Press keys to type regular text.
+
+Also:
+
+| Key | Action |
+|-----|--------|
+| **Home** | Move cursor to the beginning of the row |
+| **End** | Move cursor to the end of the row |
+| **Page Up** | Move cursor to the beginning of the column |
+| **Page Up** | Move cursor to the end of the column |
 
 ### Draw mode
 
@@ -60,6 +73,10 @@ Draw box-drawing lines and blocks using:
 | **=** | Switch to double-line style |
 | **B** | Switch to block style |
 | **E** | Switch to eraser |
-| **Space** | Switch to move mode (move cursor without drawing) |
-| **Page Up** | Draw a full vertical line at current position |
-| **Page Down** | Draw a full horizontal line at current position |
+| **Space** | Toggle move mode (move cursor without drawing) |
+| **Home** | Draw/move to the beginning of the row |
+| **End** | Draw/move to the end of the row |
+| **Page Up** | Draw/move to the beginning of the column |
+| **Page Down** | Draw/move to the end of the column |
+| **V** | Draw a full vertical line at current position |
+| **H** | Draw a full horizontal line at current position |
